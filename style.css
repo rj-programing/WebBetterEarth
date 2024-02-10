@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Grey shadow */
+}
+
+.logo img {
+  max-width: 150px; /* Adjust size as needed */
+  animation: fadeInLogo 1s ease forwards;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 10px;
+  opacity: 0;
+  animation: fadeInLinks 1s ease forwards;
+}
+
+@keyframes fadeInLogo {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLinks {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
